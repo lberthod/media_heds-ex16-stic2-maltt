@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mediaheds/ui/quiz.dart';
 
 import 'package:mediaheds/ui/login.dart';
 import 'package:mediaheds/state_container.dart';
@@ -25,7 +24,6 @@ class MyApp extends StatelessWidget {
       home: LoginView(),
       routes: {
         '/login': (context) => LoginView(),
-        '/quiz': (context) => Quiz1(),
         '/home': (context) => Home(),
         '/quizM': (context) => QuizM(),
         '/quizS': (context) => QuizS(),
