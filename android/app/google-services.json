@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "205212852042",
+    "firebase_url": "https://mediaheds.firebaseio.com",
+    "project_id": "mediaheds",
+    "storage_bucket": "mediaheds.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205212852042:android:b4b951ac1d8f9695",
+        "android_client_info": {
+          "package_name": "com.ruvy.mediaheds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205212852042-f5r45insclnd9de8uftc2v6silb2jac5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNHe6sN2EEuAatdS-1l6zZ__ngnt0oW9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205212852042-f5r45insclnd9de8uftc2v6silb2jac5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
