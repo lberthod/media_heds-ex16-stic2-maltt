@@ -68,6 +68,8 @@ class _LoginViewState extends State<LoginView> {
   }
 
   void _register() async {
+    var now = new DateTime.now();
+
     FirebaseUser user = await AuthUtil.handleSignUp(signUpemailController.text,
             signUpPasswordController.text.toString())
         .then((FirebaseUser user) {
@@ -76,11 +78,22 @@ class _LoginViewState extends State<LoginView> {
             _scaffoldKey.currentState, error, Colors.red));
     if (user != null) {
       Firestore.instance
+          .collection("user-type")
+          .document(user.uid)
+          .collection("user")
+          .add({
+        "id": user.uid,
+        "email": user.email,
+        "date": now,
+      });
+
+      Firestore.instance
           .collection('user-chat')
           .document(user.uid)
           .setData({'email': user.email});
       StateContainer.of(context).updateUserInfo(uid: user.uid);
       Navigator.pushReplacementNamed(context, '/home');
+
     }
   }
 
