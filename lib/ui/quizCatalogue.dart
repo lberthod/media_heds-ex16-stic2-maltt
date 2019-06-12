@@ -225,7 +225,6 @@ class QuizMState extends State<QuizC> {
                         fontWeight: FontWeight.bold),
                   ),
                 ),
-                new Text("fok"),
                 new Padding(padding: EdgeInsets.all(10.0)),
                 new FlatButton(
                   onPressed: () {
